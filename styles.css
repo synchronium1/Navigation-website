@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    background-color: #3498db; /* 淡蓝色背景 */
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.top-bar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #fff; /* 白色背景 */
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto; /* 当内容溢出时，添加滚动条 */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ecf0f1; /* 淡灰色背景 */
+}
+
+main {
+    flex: 1;
+    margin-left: 220px; /* 留出左边导航栏的宽度 */
+    padding: 2rem;
+    background-color: #fff; /* 白色背景 */
+}
+
+.section {
+    background-color: #ecf0f1; /* 淡灰色背景 */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+footer {
+    background-color: #ecf0f1; /* 淡灰色背景 */
+    text-align: center;
+    padding: 1rem 0;
+}
