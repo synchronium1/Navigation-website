@@ -3,7 +3,6 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-
 }
 
 .top-bar {
@@ -19,6 +18,7 @@ body {
     margin-right: 20px;
 }
 
+/*这里是防止他的大小改变导致的网页无法显示*/
 @media only screen and (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -138,6 +138,16 @@ li.son a{
 
 li.son:hover {
     background-color: #2980b9; /* 深蓝色背景 */
+    color: #fff;
+}
+
+
+li.friend a{
+    text-decoration: none;
+    color: black; /* 设置链接文字颜色为白色 */
+}
+
+li.friend:hover{
     color: #fff;
 }
 
