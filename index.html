@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>学术社交导航</title>
+    <title>学术社交导航 - 优秀学术资源汇总</title>
+    <meta name="description" content="这是一个汇集学术资源、编程学习和社交交流的导航网站。在这里，你可以找到各种学术资源，学习编程，还能与其他学者交流和分享。">
     <link rel="stylesheet" href="styles.css"> <!-- 引入外部CSS文件 -->
 </head>
+
 
 <body>
 <div class="top-bar">
@@ -19,14 +21,26 @@
 <div class="container">
     <aside class="sidebar">
         <ul>
+            <li><a href="#todo-list">ToDoList</a></li>
             <li><a href="#academic-papers">学习资源</a></li>
             <li><a href="#programming">编程学习</a></li>
             <li><a href="#academic-social">学术社交</a></li>
-            <li><a href="#todo-list">ToDoList</a></li>
+            <li><a href="#friendship-backlinks">友情外链</a></li>
         </ul>
     </aside>
 
     <main>
+        <!--搜索框区域-->
+        <div class="search-box">
+            <form onsubmit="performSearch(event)">
+                <input type="text" id="searchInput" placeholder="在百度上搜索">
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+        <!-- ToDoList 区域 -->
+        <section id="todo-list" class="section">
+            <h2>ToDoList</h2>
+        </section>
         <!-- 学习资源区域 -->
         <section id="academic-papers" class="section">
             <h2>学习资源</h2>
@@ -38,9 +52,20 @@
             <h2>编程学习</h2>
             <ul>
                 <!-- 菜鸟教程链接 -->
-                <li><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a></li>
+                <li class="son"><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a></li>
+                <li class="son"><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a></li>
+                <li class="son"><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a></li>
+                <li class="son"><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a></li>
+                <li class="son"><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a></li>
                 <!-- 其他编程学习链接 -->
                 <!-- 添加更多的链接 -->
+            </ul>
+            <ul>
+                <li class="son"><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a></li>
+                <li class="son"><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a></li>
+                <li class="son"><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a></li>
+                <li class="son"><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a></li>
+                <li class="son"><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a></li>
             </ul>
         </section>
 
@@ -50,10 +75,10 @@
             <p>在这里你可以与其他学者交流、分享学术资源。</p>
         </section>
 
-        <!-- ToDoList 区域 -->
-        <section id="todo-list" class="section">
-            <h2>ToDoList</h2>
-            <p>在这里你可以管理你的待办事项。</p>
+        <!--友情外链-->
+        <section id="friendship-backlinks" class="section">
+            <h2>友情外链</h2>
+            <p>一些友情外部链接</p>
         </section>
     </main>
 
